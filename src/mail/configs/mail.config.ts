@@ -1,5 +1,5 @@
 import { registerAs } from '@nestjs/config';
-import Joi from 'joi';
+import * as Joi from 'joi';
 import * as process from 'process';
 
 export default registerAs('mail', () => {
