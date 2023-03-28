@@ -4,9 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "lint:ts": "prettier --check \"src/**/*.ts\"",
+    "lint:ts:fix": "prettier --write \"src/**/*.ts\""
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@nestjs/config": "^2.3.1",
+    "joi": "^17.9.1",
+    "nodemailer": "^6.9.1"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.7",
+    "prettier": "^2.8.7",
+    "prettier-plugin-organize-imports": "^3.2.2",
+    "typescript": "^5.0.2"
+  },
+  "files": [
+    "dist/**/*"
+  ]
 }
