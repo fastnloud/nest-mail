@@ -1,7 +1,7 @@
 {
   "name": "@fastnloud/nest-mail",
   "version": "0.0.7",
-  "description": "",
+  "description": "Mail module for Nest using Nodemailer to desliver messages.",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
@@ -9,9 +9,14 @@
     "lint:ts": "prettier --check \"src/**/*.ts\"",
     "lint:ts:fix": "prettier --write \"src/**/*.ts\""
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "nest",
+    "mail",
+    "smtp transporter",
+    "nodemailer"
+  ],
+  "author": "jaap",
+  "license": "MIT",
   "dependencies": {
     "@nestjs/config": "^2.3.1",
     "joi": "^17.9.1",
