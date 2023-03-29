@@ -1,6 +1,6 @@
 ## Description
 
-Mail module for Nest using Nodemailer to desliver messages.
+Mail module for Nest that uses Nodemailer to deliver messages.
 
 ## Installation
 
@@ -11,6 +11,7 @@ $ npm i --save @fastnloud/nest-mail
 ## Setup
 
 Import module:
+
 ```ts
 import { MailModule } from '@fastnloud/nest-mail';
 import { Module } from '@nestjs/common';
@@ -22,6 +23,7 @@ export class AppModule {}
 ```
 
 A sample `.env` file looks something like this:
+
 ```
 MAIL_DEFAULT_FROM_ADDRESS=john.doe@example.com
 MAIL_DEFAULT_FROM_NAME=John Doe
