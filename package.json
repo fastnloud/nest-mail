@@ -2,6 +2,7 @@
   "name": "@fastnloud/nest-mail",
   "version": "0.0.8",
   "description": "Mail module for Nest using Nodemailer to desliver messages.",
+  "homepage": "https://github.com/fastnloud/nest-mail#readme",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
@@ -27,6 +28,10 @@
     "prettier": "^2.8.7",
     "prettier-plugin-organize-imports": "^3.2.2",
     "typescript": "^5.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fastnloud/nest-mail.git"
   },
   "files": [
     "dist/**/*"
