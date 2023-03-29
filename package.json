@@ -1,6 +1,6 @@
 {
   "name": "@fastnloud/nest-mail",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Mail module for Nest using Nodemailer to desliver messages.",
   "homepage": "https://github.com/fastnloud/nest-mail#readme",
   "main": "dist/index.js",
