@@ -18,10 +18,12 @@
     "url": "https://github.com/fastnloud/nest-mail.git"
   },
   "dependencies": {
-    "@nestjs/common": "^9.3.12",
-    "@nestjs/config": "^2.3.1",
     "joi": "^17.9.1",
     "nodemailer": "^6.9.1"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^9.0.0",
+    "@nestjs/config": "^2.0.0"
   },
   "devDependencies": {
     "@types/node": "^18.15.11",
