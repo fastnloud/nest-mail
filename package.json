@@ -40,6 +40,6 @@
     "nodemailer"
   ],
   "files": [
-    "dist/**/*"
+    "dist/**/*.{js,ts}"
   ]
 }
