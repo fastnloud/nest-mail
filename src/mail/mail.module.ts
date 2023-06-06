@@ -1,6 +1,7 @@
-import { Module } from '@nestjs/common';
+import { DynamicModule, Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import mailConfig from './configs/mail.config';
+import { ConfigurableModuleClass } from './mail.module-definition';
 import { SmtpTransporter } from './transporters/smtp.transporter';
 
 @Module({
@@ -8,4 +9,12 @@ import { SmtpTransporter } from './transporters/smtp.transporter';
   providers: [SmtpTransporter],
   exports: [SmtpTransporter],
 })
-export class MailModule {}
+export class MailModule extends ConfigurableModuleClass {
+  static forRoot(options = {}): DynamicModule {
+    return super.forRoot(options);
+  }
+
+  static forRootAsync(options = {}): DynamicModule {
+    return super.forRootAsync(options);
+  }
+}
