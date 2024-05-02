@@ -12,14 +12,14 @@ export default registerAs('mail', () => {
 
   const validationResult = Joi.object({
     defaultFromAddress: Joi.string().required().messages({
-      '*': 'Environment varable MAIL_DEFAULT_FROM_ADDRESS is required (string; e.g. j.doe@example.com)',
+      '*': 'Environment variable MAIL_DEFAULT_FROM_ADDRESS is required (string; e.g. j.doe@example.com)',
     }),
     defaultFromName: Joi.string().required().messages({
-      '*': 'Environment varable MAIL_DEFAULT_FROM_NAME is required (string; e.g. John Doe)',
+      '*': 'Environment variable MAIL_DEFAULT_FROM_NAME is required (string; e.g. John Doe)',
     }),
     recipients: Joi.string().optional().allow(''),
     url: Joi.string().required().messages({
-      '*': 'Environment varable MAIL_URL is required (string; e.g. smtp://localhost:1025)',
+      '*': 'Environment variable MAIL_URL is required (string; e.g. smtp://localhost:1025)',
     }),
   }).validate(config, {
     abortEarly: false,
