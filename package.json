@@ -1,6 +1,6 @@
 {
   "name": "@fastnloud/nest-mail",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Mail module for Nest that uses Nodemailer to deliver messages.",
   "homepage": "https://github.com/fastnloud/nest-mail#readme",
   "main": "dist/index.js",
@@ -8,9 +8,10 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "lint:ts": "prettier --check \"src/**/*.ts\"",
-    "lint:ts:fix": "prettier --write \"src/**/*.ts\"",
+    "prettier": "prettier --check \"src/**/*.ts\"",
+    "prettier:fix": "prettier --write \"src/**/*.ts\"",
     "prebuild": "rimraf dist",
+    "prepublishOnly": "npm run build",
     "preversion": "npm run build"
   },
   "repository": {
@@ -18,20 +19,21 @@
     "url": "https://github.com/fastnloud/nest-mail.git"
   },
   "dependencies": {
-    "joi": "^17.9.1",
-    "nodemailer": "^6.9.1"
+    "joi": "^17.9.2",
+    "nodemailer": "^6.9.3"
   },
   "peerDependencies": {
-    "@nestjs/common": "^9.0.0",
-    "@nestjs/config": "^2.0.0"
+    "@nestjs/common": "^9.0.0 || ^10.0.0",
+    "@nestjs/config": "^2.0.0 || ^3.0.0"
   },
   "devDependencies": {
-    "@types/node": "^18.15.11",
-    "@types/nodemailer": "^6.4.7",
-    "prettier": "^2.8.7",
+    "@types/node": "^18.0.0",
+    "@types/nodemailer": "^6.4.8",
+    "npm-check-updates": "^16.10.13",
+    "prettier": "^2.8.8",
     "prettier-plugin-organize-imports": "^3.2.2",
-    "rimraf": "^4.4.1",
-    "typescript": "^5.0.2"
+    "rimraf": "^5.0.1",
+    "typescript": "^5.1.6"
   },
   "keywords": [
     "nest",
