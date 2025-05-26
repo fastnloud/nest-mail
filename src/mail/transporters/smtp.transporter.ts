@@ -15,6 +15,10 @@ export class SmtpTransporter {
     options: MailOptions,
     cb: (error: Error | null, info: SentMessageInfo) => void,
   ): void {
+    if (this.config.url === 'smtp://null') {
+      return;
+    }
+
     if (!options.from) {
       options = {
         ...options,
