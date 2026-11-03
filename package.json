@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "joi": "^18.0.0",
-    "nodemailer": "^9.0.0"
+    "nodemailer": "^10.3.1"
   },
   "peerDependencies": {
     "@nestjs/common": "^10.0.0 || ^11.0.0",
